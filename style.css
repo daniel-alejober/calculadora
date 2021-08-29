@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 40rem;
+    background-color: #f2f3f7;
+    -webkit-box-shadow: -5px -5px 15px rgba(255, 255, 255, .8),
+                5px 5px 10px rgba(0, 0, 0, .1);
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, .8),
+                5px 5px 10px rgba(0, 0, 0, .1);
+    border-radius: 2rem;
+    margin: 10rem;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    
+}
+
+.output{
+    overflow: hidden;
+    color: #3b80fd;
+    font-size: 4rem;
+    padding: 1rem;
+    text-align: right;
+    border-radius: 2rem;
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, .8),
+                inset 5px 5px 10px rgba(0, 0, 0, .1);
+    border: 0 none;
+    background-color: #e9effb;
+    margin: 1rem auto;
+    width: 39rem;
+    font-weight: 400;
+}
+.container_calculadora{
+    width: 100%;
+    height: 100%;
+}
+.button{
+    box-sizing: border-box;
+    float: left;
+    cursor: pointer;
+    padding: 5%;
+    transition: .5s;
+    width: 8rem;
+    margin: 1rem;
+    color: #455181;
+    border-radius: 2rem;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, .8),
+                5px 5px 10px rgba(0, 0, 0, .1);
+    border: 0 none;
+    background-color: #f2f3f7;
+   font-weight: 500;
+}
+.button:active{
+    box-shadow: inset -5px -5px 15px rgba(255, 255, 255, .8),
+    inset 5px 5px 10px rgba(0, 0, 0, .1);
+    color:#3b80fd;
+}
+
+.operation{
+    background-color: #3b80fd;
+    color: #fff;
+}
+.double{
+    width: 70%;
+}
+
+@media (max-width:900px) {
+    section{
+        width: 100%;
+        height: 100vh;
+    }
+    .calculadora{
+        width: 90%;
+        height: 80%;
+        margin: auto 0;
+    }
+    .output{
+        width: 90%;
+        height: 50%;
+        padding-right: 2rem;
+    }
+    .container_calculadora{
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+    }
+    .button{
+        width: 5rem;
+    }
+    .double{
+        width: 65%;
+    }
+}
